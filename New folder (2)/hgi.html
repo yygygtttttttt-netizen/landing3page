@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Unlock Video</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#000;
+  }
+
+  .card{
+    width: 90vw;          /* আগের থেকে বড় */
+    max-width: 480px;     /* খুব বেশি বড় হবে না */
+    height: 85vh;         /* আগের থেকে বড় */
+    max-height: 720px;
+    position:relative;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+  }
+
+  .card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter: blur(7px);    /* blur কম করা হয়েছে */
+    transform: scale(1.08);
+  }
+
+  .overlay{
+    position:absolute;
+    inset:0;
+    background: rgba(0,0,0,0.35);
+  }
+
+  .center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    z-index:2;
+  }
+
+  .unlock-btn{
+    background:#ff004f;
+    color:#fff;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    animation: floatBtn 1.4s infinite;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  @keyframes floatBtn{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-12px); }
+    100%{ transform: translateY(0); }
+  }
+
+  .bottom-link{
+    position:absolute;
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%);
+    background: rgba(255,0,79,0.9);
+    color:#fff;
+    padding:12px 24px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:2;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <!-- 🔴 এখানে নিজের ছবি বসাও -->
+  <img src="https://image2url.com/r2/default/images/1768828134038-0995171b-22e7-4406-a201-9278d90cd792.jpg" alt="Background">
+</div>
+
+<div class="overlay"></div>
+
+<div class="center">
+  <div class="unlock-btn" onclick="unlockLink()">
+    🔒 Unlock Video
+  </div>
+</div>
+
+<div class="bottom-link" onclick="watchLink()">
+  ▶ Watching Video
+</div>
+
+<script>
+  function unlockLink(){
+    window.location.href = "https://www.effectivegatecpm.com/i7uk1jmcxr?key=462e6810924eb0b0f808d5133334d198";
+  }
+
+  function watchLink(){
+    window.location.href = "https://www.effectivegatecpm.com/vrp0sznj6?key=77067ab876b9de470f86b3b5a11a83ed";
+  }
+</script>
+
+</body>
+</html>
